@@ -3,9 +3,7 @@ from read_csv_refactored import outcomes_csv, rolls_csv
 
 rolls_list = rolls_csv
 outcomes = outcomes_csv
-roller = []
-for idx, rol in enumerate(rolls_list, start=1):
-    roller.append([idx, rol])
+roller = [[idx, rol] for idx, rol in enumerate(rolls_list, start=1)]
 
 
 def main():
